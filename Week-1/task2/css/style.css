@@ -1,0 +1,270 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  top: 0;
+}
+
+/**
+Navigation Section CSS
+*/
+nav {
+  position: absolute;
+  top: 1vh;
+  background-color: hsl(240, 4%, 95%);
+  width: 3rem;
+  height: 100%;
+}
+
+nav i {
+  padding: 50% 33%;
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    width: 2.5rem;
+  }
+
+  nav i {
+    padding: 40% 30%;
+  }
+}
+
+/**
+Header Section CSS
+*/
+
+header {
+  background-color: #454545;
+  color: white;
+  display: flex;
+  justify-content: left;
+  padding: 2rem 2rem 2rem 5rem;
+}
+
+.album-image-section > img {
+  height: 100%;
+  width: 100%;
+}
+
+
+.album-details-section {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  margin-left: 3rem;
+}
+
+.media-actions i {
+  margin-right: 1rem;
+}
+
+.media-actions i span{
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 600px) and (min-width: 400px){
+  .album-details-section {
+    margin-left: 2rem;
+  }
+
+  .heading-section > h2{
+    font-size: 18px;
+  }
+
+  .heading-section > p{
+    font-size: 12px;
+  }
+
+
+  .media-actions i {
+    font-size: 10px;
+    margin-right: 0.5rem;
+  }
+
+  .media-actions i span {
+    margin-left: 2px;
+  }
+}
+
+
+@media screen and (max-width: 400px){
+  header {
+    padding: 1rem 1rem 1rem 3rem;
+  }
+  .album-header{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+  }
+
+  .album-details-section{
+    margin-top: 1rem;
+  }
+
+  heading-section > h2{
+    font-size: 14px;
+  }
+
+  .heading-section > p{
+    font-size: 12px;
+  }
+
+  .media-actions i {
+    font-size: 9px;
+    margin-right: 0.3rem;
+  }
+
+  .media-actions i span {
+    margin-left: 1px;
+  }
+
+
+  .album-image-section > img {
+    display: block;
+    height: 70%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+/**
+Main Body Section CSS
+*/
+main {
+  padding-left: 4rem;
+  padding-right: 1rem;
+  display: block;
+  height: 50%;
+  font-size: 1.5vw;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  padding-bottom: 7rem;
+}
+
+.album-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd; 
+}
+
+.album-table-column{
+  text-align: left;
+  padding: 16px;
+}
+
+.align-center{
+  text-align: center !important;
+}
+
+.album-table-row:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.album-table-column a {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  padding: 2px;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 550px){
+
+  main{
+    padding-left: 3rem;
+    font-size: 13px;
+  }
+
+  
+  .album-table-column{
+    text-align: left;
+    padding: 10px;
+  }
+
+  
+  .album-table-row:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .album-table-column a {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    padding: 1px;
+    text-decoration: none;
+    border: 1px solid black;
+    font-size: 12px;
+  }
+
+}
+
+
+/**
+Footer Section CSS
+*/
+footer {
+  background-color: hsla(207, 93%, 29%, 0.968);
+  height: 6.25rem;
+  width: 100vw;
+  bottom: 0.1rem;
+  position: absolute;
+  display: flex;
+  justify-content:space-between;
+}
+.footer-left-section{
+  display: flex;
+  justify-content: left;
+}
+
+.footer-left-section img {
+  max-height: 100%;
+  padding: 0.6rem;
+}
+
+.image-text {
+  color: white;
+}
+
+.footer-right-section {
+  color: white;
+  width: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.footer-right-section i {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
+
+@media screen and (max-width: 450px) {
+  
+  .footer-right-section {
+    width: 40%;
+  }
+  
+  .footer-right-section i {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}

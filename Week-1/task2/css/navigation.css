@@ -1,0 +1,21 @@
+@media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) {
+    div.example {
+      font-size: 50px;
+      padding: 50px;
+      border: 8px solid black;
+      background: yellow;
+    }
+}
+
+
+nav {
+    position: absolute;
+    top: 1vh;
+    background-color: hsl(240, 4%, 95%);
+    width: 3rem;
+    height: 100%;
+  }
+  
+  nav i {
+    padding: 50% 33%;
+  }
