@@ -1,0 +1,49 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box1{
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+    background-color: blue;
+    transition: transform .7s ease-in-out;
+}
+.box1:hover{
+    transform-origin: left top 75px;
+    transform: rotate(90deg);
+}
+.box2 {
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+    background-color: chartreuse;
+    transition: transform .7s ease-in-out;
+}
+.box2:hover{
+    transform-origin: right bottom 75px;
+    transform: rotate(90deg);
+}
+.box3 {
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+    background-color:deeppink;
+    transition: transform .7s ease-in-out;
+}
+.box3:hover{
+    transform-origin: left top 75px;
+    transform: rotate(90deg);
+}
+.box4 {
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+    background-color:purple;
+    transition: transform .7s ease-in-out; 
+}
+.box4:hover{
+    transform-origin: right bottom 75px;
+    transform: rotate(90deg);
+}
